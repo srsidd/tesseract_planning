@@ -9,6 +9,9 @@ if(WIN32)
   set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 endif()
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 find_package(console_bridge REQUIRED)
 find_package(tesseract_common REQUIRED)
 find_package(Boost REQUIRED COMPONENTS serialization)
